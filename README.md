@@ -104,6 +104,13 @@ parlai eval_model --model-file <RESPONSE_GENERATOR>/model \
 ## Bib
 Please cite our work if you find it useful.
 ```
-
+@misc{yuan2023systemlevel,
+      title={System-Level Natural Language Feedback}, 
+      author={Weizhe Yuan and Kyunghyun Cho and Jason Weston},
+      year={2023},
+      eprint={2306.13588},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
 ```
 
