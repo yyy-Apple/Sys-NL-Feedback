@@ -1,5 +1,5 @@
 # Sys-NL-Feedback
-This is the code for paper [System-Level Natural Language Feedback](https://arxiv.org/abs/2306.13588)
+This is the code for the EACL 2024 paper [System-Level Natural Language Feedback](https://arxiv.org/abs/2306.13588)
 
 ## Requirements
 Our code is mostly based on [ParlAI](https://parl.ai/#getstarted), we only modified `ParlAI/parlai/core/torch_agent.py` and `ParlAI/parlai/tasks/fits/agents.py`. To install all the requirements, run the following
@@ -104,13 +104,21 @@ parlai eval_model --model-file <RESPONSE_GENERATOR>/model \
 ## Bib
 Please cite our work if you find it useful.
 ```
-@misc{yuan2023systemlevel,
-      title={System-Level Natural Language Feedback}, 
-      author={Weizhe Yuan and Kyunghyun Cho and Jason Weston},
-      year={2023},
-      eprint={2306.13588},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{yuan-etal-2024-system,
+    title = "System-Level Natural Language Feedback",
+    author = "Yuan, Weizhe  and
+      Cho, Kyunghyun  and
+      Weston, Jason",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.169",
+    pages = "2773--2789",
+    abstract = "Natural language (NL) feedback offers rich insights into user experience. While existing studies focus on an instance-level approach, where feedback is used to refine specific examples, we introduce a framework for system-level use of NL feedback. We show how to use feedback to formalize system-level design decisions in a human-in-the-loop-process {--} in order to produce better models. In particular this is done through: (i) metric design for tasks; and (ii) language model prompt design for refining model responses. We conduct two case studies of this approach for improving search query and dialog response generation, demonstrating the effectiveness of system-level feedback. We show the combination of system-level and instance-level feedback brings further gains, and that human written instance-level feedback results in more grounded refinements than GPT-3.5 written ones, underlying the importance of human feedback for building systems.",
 }
 ```
 
